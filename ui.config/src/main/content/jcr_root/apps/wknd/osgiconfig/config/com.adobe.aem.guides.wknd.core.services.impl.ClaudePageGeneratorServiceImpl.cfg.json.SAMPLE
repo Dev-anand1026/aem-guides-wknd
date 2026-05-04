@@ -1,0 +1,5 @@
+{
+  "apiKey": "YOUR_CLAUDE_API_KEY_HERE",
+  "model": "claude-opus-4-6",
+  "maxTokens": 2000
+}

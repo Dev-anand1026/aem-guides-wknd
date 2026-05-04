@@ -81,10 +81,23 @@ Import-Package: javax.annotation;version=0.0.0,*
 
     <dependencies>
         <!-- Core Component Dependency -->
-        <dependency>
-            <groupId>com.adobe.cq</groupId>
-            <artifactId>core.wcm.components.core</artifactId>
-        </dependency>
+       <dependency>
+    <groupId>com.adobe.cq</groupId>
+    <artifactId>core.wcm.components.core</artifactId>
+    <exclusions>
+        <exclusion>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-imaging</artifactId>
+        </exclusion>
+    </exclusions>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.httpcomponents</groupId>
+    <artifactId>httpclient</artifactId>
+    <version>4.5.14</version>
+    <scope>provided</scope>
+</dependency>
         <dependency>
             <groupId>uk.org.lidalia</groupId>
             <artifactId>slf4j-test</artifactId>
@@ -309,6 +322,12 @@ Import-Package: javax.annotation;version=0.0.0,*
                     <artifactId>jcr</artifactId>
                     <version>2.0</version>
                     <scope>provided</scope>
+                </dependency>
+                <dependency>
+                   <groupId>org.apache.httpcomponents</groupId>
+                   <artifactId>httpclient</artifactId>
+                   <version>4.5.14</version>
+                   <scope>provided</scope>
                 </dependency>
                 <!-- Taglibs -->
                 <dependency>

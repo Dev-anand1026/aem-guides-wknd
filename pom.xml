@@ -775,6 +775,12 @@ Bundle-DocURL:
                 <version>1.0.1</version>
                 <scope>test</scope>
             </dependency>
+            <dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-imaging</artifactId>
+    <version>1.0-alpha3</version>
+    <scope>test</scope>
+</dependency>
         </dependencies>
     </dependencyManagement>
 

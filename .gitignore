@@ -81,3 +81,6 @@ buildNumber.properties
 ### Visual Studio ###
 .vscode
 .history
+
+# Claude API Key - never commit this
+ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig/config/com.adobe.aem.guides.wknd.core.services.impl.ClaudePageGeneratorServiceImpl.cfg.json
